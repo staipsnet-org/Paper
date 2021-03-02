@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8` # Java v8 for 1.12.2
+
+
 # resolve shell-specifics
 case "$(echo "$SHELL" | sed -E 's|/usr(/local)?||g')" in
     "/bin/zsh")
